@@ -1,0 +1,165 @@
+/* Load Neulis Sans Extra Bold for Headings */
+@font-face {
+  font-family: 'Neulis Sans';
+  src: url('./fonts/Neulis_Sans_Extra_Bold.otf') format('truetype');
+  font-weight: 800; /* Use 800 to specify extra bold weight */
+  font-style: normal;
+}
+
+/* Load Neulis Sans Light for Body */
+@font-face {
+  font-family: 'Neulis Sans';
+  src: url('./fonts/Neulis_Sans_Light.otf') format('truetype');
+  font-weight: 300; /* Use 300 to specify light weight */
+  font-style: normal;
+}
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Neulis Sans', sans-serif;
+  }
+  
+  body {
+    background-color: #897b6b;
+    color: #ffffff;
+    font-family: 'Neulis Sans', Arial, sans-serif; /* Set default font to Neulis Sans Light */
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .vcard-container {
+    background-color: #1d1b1a;
+    color: #ffffff;
+    width: 360px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header {
+  position: relative;
+  text-align: center;
+}
+
+.text-background {
+  display: inline-block;
+  background-color: #f5e8dd; /* Adjust background color as needed */
+  padding: 8px 20px; /* Adjust padding for rectangle dimensions */
+  border-radius: 20px; /* Rounded corners for rectangle shape */
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 100%;
+}
+  
+  .profile-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  h1 {
+    position:relative;
+    font-family: 'Neulis Sans', Arial, sans-serif; /* Use Neulis Sans Extra Bold */
+    font-weight: 800; /* Extra bold for heading */
+    font-size: 24px;
+    margin: 10px 0;
+    color: #242320;
+    z-index: 2;
+  }
+  
+  .role {
+    font-weight: 300; /* Light for role description */
+  font-size: 14px;
+  color: #bbb;
+  }
+  
+  .contact-info {
+    padding: 20px 0;
+    text-align: left;
+  }
+  
+  .contact-info p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .cta {
+    font-weight: bold;
+  }
+  
+ .contact-links .contact-item {
+  font-weight: 300; /* Light for links */
+  display: flex; /* Aligns logo and text side by side */
+  align-items: center; /* Centers logo vertically with text */
+  color: #bbb;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.contact-links .contact-item:hover {
+  color: #ffffff;
+}
+
+/* Style for logos beside each link */
+.contact-logo {
+  width: 20px; /* Adjust size of the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 8px; /* Space between logo and text */
+}
+
+  .contact-item:hover {
+    color: #ffffff;
+  }
+  
+  .location {
+    padding: 15px 0;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 0;
+  }
+  
+  .social-icon {
+    color: #bbb;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    color: #ffffff;
+  }
+  
+  .logos {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 15px 0;
+    border-top: 1px solid #444;
+    margin-top: 10px;
+  }
+  
+  /* Customize each logo's width */
+  .logo1 {
+    width: 50px; /* Set width for the first logo */
+    height: auto; /* Keep aspect ratio */
+  }
+  
+  .logo2 {
+    width: 155px; /* Set width for the second logo */
+    height: 40;
+  }
